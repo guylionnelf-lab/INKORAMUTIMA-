@@ -1,70 +1,216 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INKORAMUTIMA | Santé mentale</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="INKORAMUTIMA — plateforme bilingue français-kirundi dédiée à la santé mentale, à l'écoute bienveillante et au bien-être."
+  />
+  <title>INKORAMUTIMA | Santé mentale</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<header class="topbar">
-<a class="brand" href="#accueil">INKORAMUTIMA</a>
-<button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
-<nav class="nav">
-<a href="#accueil" data-fr="Accueil" data-rn="Ahabanza">Accueil</a>
-<a href="#apropos" data-fr="À propos" data-rn="Ibitwerekeye">À propos</a>
-<a href="#ressources" data-fr="Ressources" data-rn="Ubumenyi">Ressources</a>
-<a href="#contact" data-fr="Contact" data-rn="Twandikire">Contact</a>
-</nav>
-<button id="langToggle" class="lang-btn">RN</button>
-</header>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#accueil" aria-label="INKORAMUTIMA accueil">
+        <span class="brand-mark">❤</span>
+        <span>INKORAMUTIMA</span>
+      </a>
 
-<main>
-<section id="accueil" class="hero">
-<div class="hero-content">
-<span class="eyebrow" data-fr="Santé mentale • Écoute • Bien-être" data-rn="Amagara yo mu mutwe • Kwumviriza • Kumererwa neza">Santé mentale • Écoute • Bien-être</span>
-<h1 data-fr="Un espace pour parler, comprendre et avancer." data-rn="Ikibanza co kuvuga, gutahura no gutera imbere.">Un espace pour parler, comprendre et avancer.</h1>
-<p data-fr="INKORAMUTIMA propose des contenus accessibles en français et en kirundi pour mieux comprendre la santé mentale et encourager une écoute bienveillante." data-rn="INKORAMUTIMA itanga amakuru yorohereza bose, mu gifaransa no mu kirundi, kugira dutahure neza amagara yo mu mutwe kandi duteze imbere ugutega amatwi mu burwaneza.">INKORAMUTIMA propose des contenus accessibles en français et en kirundi pour mieux comprendre la santé mentale et encourager une écoute bienveillante.</p>
-<div class="hero-actions">
-<a class="btn primary" href="#ressources" data-fr="Découvrir les ressources" data-rn="Raba ubumenyi">Découvrir les ressources</a>
-<a class="btn secondary" href="#contact" data-fr="Nous contacter" data-rn="Twandikire">Nous contacter</a>
-</div>
-</div>
+      <button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
 
-<div class="hero-photo">
-<img src="Plateforme-picture.png" alt="INKORAMUTIMA">
-<div class="photo-overlay">
-<p class="quote">« Vyose ni mu mutwe »</p>
-<p class="small" data-fr="Écouter avec humanité. Informer avec clarté." data-rn="Kwumviriza mu burwaneza. Gutanga amakuru atomoye.">Écouter avec humanité. Informer avec clarté.</p>
-</div>
-</div>
-</section>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#accueil" data-fr="Accueil" data-rn="Ahabanza">Accueil</a>
+        <a href="#apropos" data-fr="À propos" data-rn="Ibitwerekeye">À propos</a>
+        <a href="#ressources" data-fr="Ressources" data-rn="Ubumenyi">Ressources</a>
+        <a href="#contact" data-fr="Contact" data-rn="Twandikire">Contact</a>
+      </nav>
 
-<section id="apropos" class="section">
-<div class="section-heading"><span data-fr="À propos" data-rn="Ibitwerekeye">À propos</span>
-<h2 data-fr="Pourquoi INKORAMUTIMA ?" data-rn="Kubera iki INKORAMUTIMA ?">Pourquoi INKORAMUTIMA ?</h2></div>
-<div class="grid three">
-<article class="card"><h3 data-fr="Informer" data-rn="Kumenyesha">Informer</h3><p>Rendre les notions de santé mentale simples, fiables et utiles au quotidien.</p></article>
-<article class="card"><h3 data-fr="Écouter" data-rn="Kwumviriza">Écouter</h3><p>Promouvoir une écoute bienveillante, respectueuse et sans jugement.</p></article>
-<article class="card"><h3 data-fr="Orienter" data-rn="Kwerekeza">Orienter</h3><p>Aider chacun à reconnaître quand il est utile de demander un soutien professionnel.</p></article>
-</div>
-</section>
+      <button id="langToggle" class="lang-btn" type="button">RN</button>
+    </div>
+  </header>
 
-<section id="ressources" class="section alt">
-<div class="section-heading"><span data-fr="Ressources" data-rn="Ubumenyi">Ressources</span><h2>Des contenus pour mieux comprendre</h2></div>
-<div class="grid two">
-<article class="resource"><div class="icon">🎧</div><div><h3>Écoute bienveillante</h3><p>Conseils pratiques pour mieux écouter une personne qui traverse un moment difficile.</p></div></article>
-<article class="resource"><div class="icon">🧠</div><div><h3>Santé mentale</h3><p>Comprendre le stress, les émotions, le soutien social et les signes d'alerte.</p></div></article>
-</div>
-</section>
+  <main>
+    <section id="accueil" class="hero">
+      <div class="container hero-grid">
 
-<section id="contact" class="section contact">
-<div><span>Contact</span><h2>Restons en contact</h2><p>Cette première version de la plateforme peut ensuite recevoir des articles, émissions audio, vidéos et formulaires de contact.</p></div>
-<a class="btn primary" href="mailto:contact@inkoramutima.bi">Écrire un message</a>
-</section>
-</main>
+        <div class="hero-copy">
+          <p class="eyebrow"
+             data-fr="Santé mentale • Écoute • Bien-être"
+             data-rn="Amagara yo mu mutwe • Kwumviriza • Kumererwa neza">
+            Santé mentale • Écoute • Bien-être
+          </p>
 
-<footer><strong>INKORAMUTIMA</strong><span>© 2026</span></footer>
-<script src="script.js"></script>
+          <h1
+            data-fr="Un espace pour parler, comprendre et avancer."
+            data-rn="Ikibanza co kuvuga, gutahura no gutera imbere.">
+            Un espace pour parler, comprendre et avancer.
+          </h1>
+
+          <p class="lead"
+             data-fr="INKORAMUTIMA propose des contenus accessibles en français et en kirundi pour mieux comprendre la santé mentale et encourager une écoute bienveillante."
+             data-rn="INKORAMUTIMA itanga amakuru mu gifaransa no mu kirundi kugira dufashe gutahura amagara yo mu mutwe no guteza imbere ugutega amatwi mu burwaneza.">
+            INKORAMUTIMA propose des contenus accessibles en français et en kirundi pour mieux comprendre la santé mentale et encourager une écoute bienveillante.
+          </p>
+
+          <p class="slogan">« Vyose ni mu mutwe »</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary"
+               href="#ressources"
+               data-fr="Découvrir les ressources"
+               data-rn="Raba ubumenyi">
+              Découvrir les ressources
+            </a>
+
+            <a class="btn btn-secondary"
+               href="#contact"
+               data-fr="Nous contacter"
+               data-rn="Twandikire">
+              Nous contacter
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-accent" aria-hidden="true"></div>
+          <figure class="hero-photo">
+            <img
+              src="Plateforme-picture.png"
+              alt="Scène d'écoute bienveillante pour INKORAMUTIMA"
+            />
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="apropos" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span data-fr="À propos" data-rn="Ibitwerekeye">À propos</span>
+          <h2
+            data-fr="Pourquoi INKORAMUTIMA ?"
+            data-rn="Kubera iki INKORAMUTIMA ?">
+            Pourquoi INKORAMUTIMA ?
+          </h2>
+          <p
+            data-fr="Une plateforme pensée pour informer avec clarté, écouter avec humanité et orienter sans jugement."
+            data-rn="Urubuga rwagenewe gutanga amakuru atomoye, kwumviriza mu burwaneza no kwerekeza ata gucira urubanza.">
+            Une plateforme pensée pour informer avec clarté, écouter avec humanité et orienter sans jugement.
+          </p>
+        </div>
+
+        <div class="grid three">
+          <article class="card">
+            <div class="card-icon">01</div>
+            <h3 data-fr="Informer" data-rn="Kumenyesha">Informer</h3>
+            <p>
+              Rendre les notions de santé mentale simples, fiables et utiles au quotidien.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">02</div>
+            <h3 data-fr="Écouter" data-rn="Kwumviriza">Écouter</h3>
+            <p>
+              Promouvoir une écoute bienveillante, respectueuse et sans jugement.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">03</div>
+            <h3 data-fr="Orienter" data-rn="Kwerekeza">Orienter</h3>
+            <p>
+              Aider chacun à reconnaître quand il est utile de demander un soutien professionnel.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ressources" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <span data-fr="Ressources" data-rn="Ubumenyi">Ressources</span>
+          <h2
+            data-fr="Des contenus pour mieux comprendre"
+            data-rn="Ubumenyi bwo gufasha gutahura neza">
+            Des contenus pour mieux comprendre
+          </h2>
+        </div>
+
+        <div class="grid two">
+          <article class="resource">
+            <div class="resource-icon">🎧</div>
+            <div>
+              <h3
+                data-fr="Écoute bienveillante"
+                data-rn="Gitega amatwi mu burwaneza">
+                Écoute bienveillante
+              </h3>
+              <p>
+                Conseils pratiques pour mieux écouter une personne qui traverse un moment difficile.
+              </p>
+            </div>
+          </article>
+
+          <article class="resource">
+            <div class="resource-icon">🧠</div>
+            <div>
+              <h3
+                data-fr="Santé mentale"
+                data-rn="Amagara yo mu mutwe">
+                Santé mentale
+              </h3>
+              <p>
+                Comprendre le stress, les émotions, le soutien social et les signes d'alerte.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-panel">
+        <div>
+          <span class="contact-label"
+                data-fr="Contact"
+                data-rn="Twandikire">
+            Contact
+          </span>
+
+          <h2
+            data-fr="Restons en contact"
+            data-rn="Tugume duhanahana amakuru">
+            Restons en contact
+          </h2>
+
+          <p>
+            Cette plateforme pourra recevoir des articles, émissions audio, vidéos et contenus d'accompagnement en santé mentale.
+          </p>
+        </div>
+
+        <a class="btn btn-primary"
+           href="mailto:contact@inkoramutima.bi"
+           data-fr="Écrire un message"
+           data-rn="Twandikire">
+          Écrire un message
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <strong>INKORAMUTIMA</strong>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
