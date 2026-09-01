@@ -1,26 +1,14 @@
-const langToggle = document.getElementById('langToggle');
-const menuBtn = document.querySelector('.menu-btn');
-const nav = document.querySelector('.nav');
+# INKORAMUTIMA
 
-let lang = 'fr';
+Plateforme bilingue en français et en kirundi dédiée à la santé mentale, à l’écoute bienveillante et au bien-être.
 
-langToggle.addEventListener('click', () => {
-  lang = lang === 'fr' ? 'rn' : 'fr';
-  document.documentElement.lang = lang === 'fr' ? 'fr' : 'rn';
+## Objectifs
 
-  document.querySelectorAll('[data-fr][data-rn]').forEach(el => {
-    el.textContent = el.dataset[lang];
-  });
+- Informer sur la santé mentale
+- Promouvoir l’écoute bienveillante
+- Orienter vers des ressources utiles
+- Proposer des contenus accessibles en français et en kirundi
 
-  langToggle.textContent = lang === 'fr' ? 'RN' : 'FR';
-});
+## Slogan
 
-menuBtn.addEventListener('click', () => {
-  nav.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav a').forEach(a => {
-  a.addEventListener('click', () => {
-    nav.classList.remove('open');
-  });
-});
+**Vyose ni mu mutwe**
