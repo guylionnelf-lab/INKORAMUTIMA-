@@ -3,234 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta
-    name="description"
-    content="INKORAMUTIMA — plateforme bilingue français-kirundi dédiée à la santé mentale, à l'écoute bienveillante et au bien-être."
-  />
-  <title>INKORAMUTIMA | Santé mentale</title>
+  <meta name="description" content="ITEKANE — Amagara yo mu mutwe • Kubaho neza. Plateforme de santé mentale, formation, émissions et ressources." />
+  <title>ITEKANE | Santé mentale • Formation • Bien-être</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="topbar">
     <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="INKORAMUTIMA accueil">
-        <span class="brand-mark">❤</span>
-        <span>INKORAMUTIMA</span>
+      <a class="brand" href="#accueil" aria-label="Accueil ITEKANE">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>ITEKANE</span>
       </a>
 
-      <button class="menu-btn" aria-label="Ouvrir le menu">☰</button>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-button" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </label>
 
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#accueil" data-fr="Accueil" data-rn="Ahabanza">Accueil</a>
-        <a href="#apropos" data-fr="À propos" data-rn="Ibitwerekeye">À propos</a>
-        <a href="#ressources" data-fr="Ressources" data-rn="Ubumenyi">Ressources</a>
-        <a href="#contact" data-fr="Contact" data-rn="Twandikire">Contact</a>
-        <a href="https://wa.me/25776230236?text=Bonjour%20INKORAMUTIMA%2C%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener noreferrer">WhatsApp</a>
-        <a href="https://www.facebook.com/guy.lionnel.funguro" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <nav class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#sante-mentale">Santé mentale</a>
+        <a href="#formation">Formation</a>
+        <a href="#emissions">Émissions</a>
+        <a href="#ressources">Ressources</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
       </nav>
-
-      <button id="langToggle" class="lang-btn" type="button">RN</button>
     </div>
   </header>
 
   <main>
     <section id="accueil" class="hero">
       <div class="container hero-grid">
-
         <div class="hero-copy">
-          <p class="eyebrow"
-             data-fr="Santé mentale • Écoute • Bien-être"
-             data-rn="Amagara yo mu mutwe • Kwumviriza • Kumererwa neza">
-            Santé mentale • Écoute • Bien-être
+          <p class="eyebrow">Amagara yo mu mutwe • Kubaho neza</p>
+          <h1>Un espace pour comprendre, apprendre et mieux vivre.</h1>
+          <p class="lead">
+            ITEKANE est une plateforme dédiée à la santé mentale, au bien-être et à la formation.
+            Elle propose des contenus accessibles, des ressources pratiques et des espaces
+            d’apprentissage pour aider chacun à mieux comprendre la santé mentale et à développer
+            des habitudes favorables au bien-être.
           </p>
-
-          <h1
-            data-fr="Un espace pour parler, comprendre et avancer."
-            data-rn="Ikibanza co kuvuga, gutahura no gutera imbere.">
-            Un espace pour parler, comprendre et avancer.
-          </h1>
-
-          <p class="lead"
-             data-fr="INKORAMUTIMA propose des contenus accessibles en français et en kirundi pour mieux comprendre la santé mentale et encourager une écoute bienveillante."
-             data-rn="INKORAMUTIMA itanga amakuru mu gifaransa no mu kirundi kugira dufashe gutahura amagara yo mu mutwe no guteza imbere ugutega amatwi mu burwaneza.">
-            INKORAMUTIMA propose des contenus accessibles en français et en kirundi pour mieux comprendre la santé mentale et encourager une écoute bienveillante.
-          </p>
-
-          <p class="slogan">« Vyose ni mu mutwe »</p>
-
+          <p class="slogan">Vyose ni mu mutwe</p>
           <div class="hero-actions">
-            <a class="btn btn-primary"
-               href="#ressources"
-               data-fr="Découvrir les ressources"
-               data-rn="Raba ubumenyi">
-              Découvrir les ressources
-            </a>
-
-            <a class="btn btn-secondary"
-               href="#contact"
-               data-fr="Nous contacter"
-               data-rn="Twandikire">
-              Nous contacter
-            </a>
+            <a class="btn btn-primary" href="#ressources">Découvrir nos ressources</a>
+            <a class="btn btn-secondary" href="#formation">Accéder aux formations</a>
           </div>
         </div>
 
         <div class="hero-visual">
           <div class="image-accent" aria-hidden="true"></div>
           <figure class="hero-photo">
-            <img
-              src="Plateforme-picture.png"
-              alt="Scène d'écoute bienveillante pour INKORAMUTIMA"
-            />
+            <img src="Plateforme-picture.png" alt="Écoute bienveillante et santé mentale" />
           </figure>
         </div>
-
       </div>
     </section>
 
-    <section id="apropos" class="section">
+    <section class="values-strip" aria-label="Valeurs ITEKANE">
+      <div class="container values">
+        <span>Informer</span><i></i><span>Former</span><i></i><span>Écouter</span><i></i><span>Accompagner</span>
+      </div>
+    </section>
+
+    <section id="sante-mentale" class="section">
       <div class="container">
         <div class="section-heading">
-          <span data-fr="À propos" data-rn="Ibitwerekeye">À propos</span>
-          <h2
-            data-fr="Pourquoi INKORAMUTIMA ?"
-            data-rn="Kubera iki INKORAMUTIMA ?">
-            Pourquoi INKORAMUTIMA ?
-          </h2>
-          <p
-            data-fr="Une plateforme pensée pour informer avec clarté, écouter avec humanité et orienter sans jugement."
-            data-rn="Urubuga rwagenewe gutanga amakuru atomoye, kwumviriza mu burwaneza no kwerekeza ata gucira urubanza.">
-            Une plateforme pensée pour informer avec clarté, écouter avec humanité et orienter sans jugement.
-          </p>
+          <span>Découvrir ITEKANE</span>
+          <h2>Des contenus pour mieux se comprendre et avancer.</h2>
         </div>
 
-        <div class="grid three">
+        <div class="grid four">
           <article class="card">
-            <div class="card-icon">01</div>
-            <h3 data-fr="Informer" data-rn="Kumenyesha">Informer</h3>
-            <p>
-              Rendre les notions de santé mentale simples, fiables et utiles au quotidien.
-            </p>
+            <div class="card-number">01</div>
+            <h3>Santé mentale</h3>
+            <p>Mieux comprendre ses pensées, ses émotions et ses réactions pour prendre soin de soi et améliorer son bien-être au quotidien.</p>
+            <a class="card-link" href="#sante-mentale">Explorer</a>
           </article>
 
-          <article class="card">
-            <div class="card-icon">02</div>
-            <h3 data-fr="Écouter" data-rn="Kwumviriza">Écouter</h3>
-            <p>
-              Promouvoir une écoute bienveillante, respectueuse et sans jugement.
-            </p>
+          <article id="formation" class="card">
+            <div class="card-number">02</div>
+            <h3>Formation</h3>
+            <p>Apprendre à son rythme grâce à des contenus simples, pratiques et structurés pour mieux comprendre la santé mentale, le bien-être et les relations humaines.</p>
+            <a class="card-link" href="#formation">Découvrir</a>
           </article>
 
-          <article class="card">
-            <div class="card-icon">03</div>
-            <h3 data-fr="Orienter" data-rn="Kwerekeza">Orienter</h3>
-            <p>
-              Aider chacun à reconnaître quand il est utile de demander un soutien professionnel.
-            </p>
+          <article id="emissions" class="card">
+            <div class="card-number">03</div>
+            <h3>Émissions</h3>
+            <p>Écouter des échanges, des témoignages et des discussions autour de la santé mentale, du bien-être et des réalités de la vie quotidienne.</p>
+            <a class="card-link" href="#emissions">Écouter</a>
+          </article>
+
+          <article id="ressources" class="card">
+            <div class="card-number">04</div>
+            <h3>Ressources</h3>
+            <p>Accéder à des articles, fiches pratiques, conseils et outils utiles pour mieux s’informer, réfléchir et agir au quotidien.</p>
+            <a class="card-link" href="#ressources">Consulter</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="ressources" class="section section-dark">
-      <div class="container">
-        <div class="section-heading">
-          <span data-fr="Ressources" data-rn="Ubumenyi">Ressources</span>
-          <h2
-            data-fr="Des contenus pour mieux comprendre"
-            data-rn="Ubumenyi bwo gufasha gutahura neza">
-            Des contenus pour mieux comprendre
-          </h2>
+    <section id="apropos" class="section section-soft">
+      <div class="container about-grid">
+        <div>
+          <span class="section-kicker">À propos</span>
+          <h2>Une plateforme humaine, accessible et utile.</h2>
         </div>
-
-        <div class="grid two">
-          <article class="resource">
-            <div class="resource-icon">🎧</div>
-            <div>
-              <h3
-                data-fr="Écoute bienveillante"
-                data-rn="Gitega amatwi mu burwaneza">
-                Écoute bienveillante
-              </h3>
-              <p>
-                Conseils pratiques pour mieux écouter une personne qui traverse un moment difficile.
-              </p>
-            </div>
-          </article>
-
-          <article class="resource">
-            <div class="resource-icon">🧠</div>
-            <div>
-              <h3
-                data-fr="Santé mentale"
-                data-rn="Amagara yo mu mutwe">
-                Santé mentale
-              </h3>
-              <p>
-                Comprendre le stress, les émotions, le soutien social et les signes d'alerte.
-              </p>
-            </div>
-          </article>
+        <div class="about-copy">
+          <p>ITEKANE veut rapprocher l’information, l’apprentissage et les ressources de santé mentale des personnes qui en ont besoin, dans un langage simple et adapté à la vie quotidienne.</p>
+          <p>La plateforme évoluera progressivement avec des formations, des émissions, des ressources pratiques et des contenus en français et en kirundi.</p>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section">
       <div class="container contact-panel">
-        <div>
-          <span class="contact-label"
-                data-fr="Contact"
-                data-rn="Twandikire">
-            Contact
-          </span>
-
-          <h2
-            data-fr="Restons en contact"
-            data-rn="Tugume duhanahana amakuru">
-            Restons en contact
-          </h2>
-
-          <p>
-            Cette plateforme pourra recevoir des articles, émissions audio, vidéos et contenus d'accompagnement en santé mentale.
-          </p>
+        <div class="contact-copy">
+          <span class="section-kicker">Contact</span>
+          <h2>Restons en contact.</h2>
+          <p>Une question, une proposition de collaboration ou besoin d’en savoir plus sur ITEKANE ? Vous pouvez nous écrire directement.</p>
         </div>
 
         <div class="contact-actions">
-          <a class="btn btn-primary"
-             href="https://wa.me/25776230236?text=Bonjour%20INKORAMUTIMA%2C%20je%20souhaite%20vous%20contacter."
-             target="_blank"
-             rel="noopener noreferrer">
-            WhatsApp
-          </a>
-
-          <a class="btn btn-facebook"
-             href="https://www.facebook.com/guy.lionnel.funguro"
-             target="_blank"
-             rel="noopener noreferrer">
-            Facebook
-          </a>
+          <a class="btn btn-whatsapp" href="https://wa.me/25776230236?text=Bonjour%20ITEKANE%2C%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a class="btn btn-facebook" href="https://www.facebook.com/guy.lionnel.funguro" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
       </div>
     </section>
   </main>
 
-
-  <a class="whatsapp-float"
-     href="https://wa.me/25776230236?text=Bonjour%20INKORAMUTIMA%2C%20je%20souhaite%20vous%20contacter."
-     target="_blank"
-     rel="noopener noreferrer"
-     aria-label="Contacter INKORAMUTIMA sur WhatsApp">
-    WhatsApp
-  </a>
+  <a class="whatsapp-float" href="https://wa.me/25776230236?text=Bonjour%20ITEKANE%2C%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener noreferrer" aria-label="Contacter ITEKANE sur WhatsApp">WA</a>
 
   <footer>
     <div class="container footer-wrap">
-      <strong>INKORAMUTIMA</strong>
-      <span>© 2026</span>
+      <div>
+        <strong>ITEKANE</strong>
+        <span>Amagara yo mu mutwe • Kubaho neza</span>
+      </div>
+      <span>© 2026 ITEKANE</span>
     </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
