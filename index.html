@@ -8,142 +8,237 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav-wrap">
-      <a class="brand" href="#accueil" aria-label="Accueil ITEKANE">
-        <span class="brand-dot" aria-hidden="true"></span>
-        <span>ITEKANE</span>
-      </a>
 
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="menu-button" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </label>
+<header class="topbar">
+  <div class="container nav-wrap">
+    <a class="brand" href="#accueil" aria-label="Accueil ITEKANE">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>ITEKANE</span>
+    </a>
 
-      <nav class="nav">
-        <a href="#accueil">Accueil</a>
-        <a href="#sante-mentale">Santé mentale</a>
-        <a href="#formation">Formation</a>
-        <a href="#emissions">Émissions</a>
-        <a href="#ressources">Ressources</a>
-        <a href="#apropos">À propos</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-button" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav">
+      <a href="#accueil" data-fr="Accueil" data-rn="Ahabanza">Accueil</a>
+      <a href="#sante-mentale" data-fr="Santé mentale" data-rn="Amagara yo mu mutwe">Santé mentale</a>
+      <a href="#formation" data-fr="Formation" data-rn="Inyigisho">Formation</a>
+      <a href="#emissions" data-fr="Émissions" data-rn="Ibiganiro">Émissions</a>
+      <a href="#ressources" data-fr="Ressources" data-rn="Ubumenyi">Ressources</a>
+      <a href="#apropos" data-fr="À propos" data-rn="Ibitwerekeye">À propos</a>
+      <a href="#contact" data-fr="Contact" data-rn="Twandikire">Contact</a>
+    </nav>
+
+    <button id="langToggle" class="lang-btn" type="button" aria-label="Changer de langue">RN</button>
+  </div>
+</header>
+
+<main>
+  <section id="accueil" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"
+           data-fr="Amagara yo mu mutwe • Kubaho neza"
+           data-rn="Amagara yo mu mutwe • Kubaho neza">
+          Amagara yo mu mutwe • Kubaho neza
+        </p>
+
+        <h1
+          data-fr="Un espace pour comprendre, apprendre et mieux vivre."
+          data-rn="Ikibanza co gutahura, kwiga no kubaho neza.">
+          Un espace pour comprendre, apprendre et mieux vivre.
+        </h1>
+
+        <p class="lead"
+           data-fr="ITEKANE est une plateforme dédiée à la santé mentale, au bien-être et à la formation. Elle propose des contenus accessibles, des ressources pratiques et des espaces d’apprentissage pour aider chacun à mieux comprendre la santé mentale et à développer des habitudes favorables au bien-être."
+           data-rn="ITEKANE ni urubuga rwahariwe amagara yo mu mutwe, kubaho neza n’inyigisho. Rutanga ubumenyi bworoshe, ibikoresho ngirakamaro n’ivyigwa bifasha umuntu gutahura neza amagara yo mu mutwe no gutsimbataza ingeso zifasha kubaho neza.">
+          ITEKANE est une plateforme dédiée à la santé mentale, au bien-être et à la formation. Elle propose des contenus accessibles, des ressources pratiques et des espaces d’apprentissage pour aider chacun à mieux comprendre la santé mentale et à développer des habitudes favorables au bien-être.
+        </p>
+
+        <p class="slogan">Vyose ni mu mutwe</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#ressources"
+             data-fr="Découvrir nos ressources"
+             data-rn="Raba ubumenyi">
+            Découvrir nos ressources
+          </a>
+          <a class="btn btn-secondary" href="#formation"
+             data-fr="Accéder aux formations"
+             data-rn="Ja ku nyigisho">
+            Accéder aux formations
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="image-accent" aria-hidden="true"></div>
+        <figure class="hero-photo">
+          <img src="Plateforme-picture.png" alt="Écoute bienveillante et santé mentale" />
+        </figure>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section id="accueil" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Amagara yo mu mutwe • Kubaho neza</p>
-          <h1>Un espace pour comprendre, apprendre et mieux vivre.</h1>
-          <p class="lead">
-            ITEKANE est une plateforme dédiée à la santé mentale, au bien-être et à la formation.
-            Elle propose des contenus accessibles, des ressources pratiques et des espaces
-            d’apprentissage pour aider chacun à mieux comprendre la santé mentale et à développer
-            des habitudes favorables au bien-être.
+  <section class="values-strip" aria-label="Valeurs ITEKANE">
+    <div class="container values-grid">
+      <div class="value-item" data-fr="Informer" data-rn="Kumenyesha">Informer</div>
+      <div class="value-item" data-fr="Former" data-rn="Kwigisha">Former</div>
+      <div class="value-item" data-fr="Écouter" data-rn="Kwumviriza">Écouter</div>
+      <div class="value-item" data-fr="Accompagner" data-rn="Gufasha">Accompagner</div>
+    </div>
+  </section>
+
+  <section id="sante-mentale" class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span data-fr="Découvrir ITEKANE" data-rn="Menya ITEKANE">Découvrir ITEKANE</span>
+        <h2
+          data-fr="Des contenus pour mieux se comprendre et avancer."
+          data-rn="Ubumenyi bwo kwitahura neza no gutera imbere.">
+          Des contenus pour mieux se comprendre et avancer.
+        </h2>
+      </div>
+
+      <div class="grid four">
+        <article class="card">
+          <div class="card-number">01</div>
+          <h3 data-fr="Santé mentale" data-rn="Amagara yo mu mutwe">Santé mentale</h3>
+          <p
+            data-fr="Mieux comprendre ses pensées, ses émotions et ses réactions pour prendre soin de soi et améliorer son bien-être au quotidien."
+            data-rn="Gutahura neza ivyiyumviro, inyiyumvo n’ingene umuntu yitwara kugira yitwararike kandi arushirize kubaho neza buri musi.">
+            Mieux comprendre ses pensées, ses émotions et ses réactions pour prendre soin de soi et améliorer son bien-être au quotidien.
           </p>
-          <p class="slogan">Vyose ni mu mutwe</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#ressources">Découvrir nos ressources</a>
-            <a class="btn btn-secondary" href="#formation">Accéder aux formations</a>
-          </div>
-        </div>
+        </article>
 
-        <div class="hero-visual">
-          <div class="image-accent" aria-hidden="true"></div>
-          <figure class="hero-photo">
-            <img src="Plateforme-picture.png" alt="Écoute bienveillante et santé mentale" />
-          </figure>
-        </div>
+        <article id="formation" class="card">
+          <div class="card-number">02</div>
+          <h3 data-fr="Formation" data-rn="Inyigisho">Formation</h3>
+          <p
+            data-fr="Apprendre à son rythme grâce à des contenus simples, pratiques et structurés pour mieux comprendre la santé mentale, le bien-être et les relations humaines."
+            data-rn="Kwiga ku muvuduko wawe biciye mu vyigwa vyoroshe, ngirakamaro kandi biteguye neza ku bijanye n’amagara yo mu mutwe, kubaho neza n’imigenderanire.">
+            Apprendre à son rythme grâce à des contenus simples, pratiques et structurés pour mieux comprendre la santé mentale, le bien-être et les relations humaines.
+          </p>
+        </article>
+
+        <article id="emissions" class="card">
+          <div class="card-number">03</div>
+          <h3 data-fr="Émissions" data-rn="Ibiganiro">Émissions</h3>
+          <p
+            data-fr="Écouter des échanges, des témoignages et des discussions autour de la santé mentale, du bien-être et des réalités de la vie quotidienne."
+            data-rn="Kwumviriza ibiganiro, intahe n’ivyiyumviro ku magara yo mu mutwe, kubaho neza n’ubuzima bwa buri musi.">
+            Écouter des échanges, des témoignages et des discussions autour de la santé mentale, du bien-être et des réalités de la vie quotidienne.
+          </p>
+        </article>
+
+        <article id="ressources" class="card">
+          <div class="card-number">04</div>
+          <h3 data-fr="Ressources" data-rn="Ubumenyi">Ressources</h3>
+          <p
+            data-fr="Accéder à des articles, fiches pratiques, conseils et outils utiles pour mieux s’informer, réfléchir et agir au quotidien."
+            data-rn="Kuronswa inkuru, impapuro ngirakamaro, impanuro n’ibikoresho bifasha kumenya, kwiyumvira no kugira ico ukoze buri musi.">
+            Accéder à des articles, fiches pratiques, conseils et outils utiles pour mieux s’informer, réfléchir et agir au quotidien.
+          </p>
+        </article>
       </div>
-    </section>
-
-    <section class="values-strip" aria-label="Valeurs ITEKANE">
-      <div class="container values">
-        <span>Informer</span><i></i><span>Former</span><i></i><span>Écouter</span><i></i><span>Accompagner</span>
-      </div>
-    </section>
-
-    <section id="sante-mentale" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span>Découvrir ITEKANE</span>
-          <h2>Des contenus pour mieux se comprendre et avancer.</h2>
-        </div>
-
-        <div class="grid four">
-          <article class="card">
-            <div class="card-number">01</div>
-            <h3>Santé mentale</h3>
-            <p>Mieux comprendre ses pensées, ses émotions et ses réactions pour prendre soin de soi et améliorer son bien-être au quotidien.</p>
-            <a class="card-link" href="#sante-mentale">Explorer</a>
-          </article>
-
-          <article id="formation" class="card">
-            <div class="card-number">02</div>
-            <h3>Formation</h3>
-            <p>Apprendre à son rythme grâce à des contenus simples, pratiques et structurés pour mieux comprendre la santé mentale, le bien-être et les relations humaines.</p>
-            <a class="card-link" href="#formation">Découvrir</a>
-          </article>
-
-          <article id="emissions" class="card">
-            <div class="card-number">03</div>
-            <h3>Émissions</h3>
-            <p>Écouter des échanges, des témoignages et des discussions autour de la santé mentale, du bien-être et des réalités de la vie quotidienne.</p>
-            <a class="card-link" href="#emissions">Écouter</a>
-          </article>
-
-          <article id="ressources" class="card">
-            <div class="card-number">04</div>
-            <h3>Ressources</h3>
-            <p>Accéder à des articles, fiches pratiques, conseils et outils utiles pour mieux s’informer, réfléchir et agir au quotidien.</p>
-            <a class="card-link" href="#ressources">Consulter</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="apropos" class="section section-soft">
-      <div class="container about-grid">
-        <div>
-          <span class="section-kicker">À propos</span>
-          <h2>Une plateforme humaine, accessible et utile.</h2>
-        </div>
-        <div class="about-copy">
-          <p>ITEKANE veut rapprocher l’information, l’apprentissage et les ressources de santé mentale des personnes qui en ont besoin, dans un langage simple et adapté à la vie quotidienne.</p>
-          <p>La plateforme évoluera progressivement avec des formations, des émissions, des ressources pratiques et des contenus en français et en kirundi.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container contact-panel">
-        <div class="contact-copy">
-          <span class="section-kicker">Contact</span>
-          <h2>Restons en contact.</h2>
-          <p>Une question, une proposition de collaboration ou besoin d’en savoir plus sur ITEKANE ? Vous pouvez nous écrire directement.</p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="btn btn-whatsapp" href="https://wa.me/25776230236?text=Bonjour%20ITEKANE%2C%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a class="btn btn-facebook" href="https://www.facebook.com/guy.lionnel.funguro" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <a class="whatsapp-float" href="https://wa.me/25776230236?text=Bonjour%20ITEKANE%2C%20je%20souhaite%20vous%20contacter." target="_blank" rel="noopener noreferrer" aria-label="Contacter ITEKANE sur WhatsApp">WA</a>
-
-  <footer>
-    <div class="container footer-wrap">
-      <div>
-        <strong>ITEKANE</strong>
-        <span>Amagara yo mu mutwe • Kubaho neza</span>
-      </div>
-      <span>© 2026 ITEKANE</span>
     </div>
-  </footer>
+  </section>
+
+  <section id="apropos" class="section section-soft">
+    <div class="container about-grid">
+      <div>
+        <span class="section-kicker" data-fr="À propos" data-rn="Ibitwerekeye">À propos</span>
+        <h2
+          data-fr="Une plateforme humaine, accessible et utile."
+          data-rn="Urubuga rw’abantu, rworoshe kandi ngirakamaro.">
+          Une plateforme humaine, accessible et utile.
+        </h2>
+      </div>
+
+      <div class="about-copy">
+        <p
+          data-fr="ITEKANE veut rapprocher l’information, l’apprentissage et les ressources de santé mentale des personnes qui en ont besoin, dans un langage simple et adapté à la vie quotidienne."
+          data-rn="ITEKANE ishaka kwegera abantu bakeneye ubumenyi, inyigisho n’ibikoresho vy’amagara yo mu mutwe, mu mvugo yoroshe kandi ihuye n’ubuzima bwa buri musi.">
+          ITEKANE veut rapprocher l’information, l’apprentissage et les ressources de santé mentale des personnes qui en ont besoin, dans un langage simple et adapté à la vie quotidienne.
+        </p>
+        <p
+          data-fr="La plateforme évoluera progressivement avec des formations, des émissions, des ressources pratiques et des contenus en français et en kirundi."
+          data-rn="Urubuga ruzogenda rwaguka rufise inyigisho, ibiganiro, ibikoresho ngirakamaro n’ibirimo mu gifaransa no mu kirundi.">
+          La plateforme évoluera progressivement avec des formations, des émissions, des ressources pratiques et des contenus en français et en kirundi.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact-panel">
+      <div class="contact-copy">
+        <span class="section-kicker" data-fr="Contact" data-rn="Twandikire">Contact</span>
+        <h2 data-fr="Restons en contact." data-rn="Tugume tuvugana.">Restons en contact.</h2>
+        <p
+          data-fr="Une question, une proposition de collaboration ou besoin d’en savoir plus sur ITEKANE ? Vous pouvez nous écrire directement."
+          data-rn="Ufise ikibazo, iciyumviro co gukorana canke ushaka kumenya vyinshi kuri ITEKANE? Urashobora kutwandikira ubwo nyene.">
+          Une question, une proposition de collaboration ou besoin d’en savoir plus sur ITEKANE ? Vous pouvez nous écrire directement.
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <a
+          class="btn btn-whatsapp"
+          href="https://wa.me/25776230236?text=Bonjour%20ITEKANE%2C%20je%20souhaite%20vous%20contacter."
+          target="_blank"
+          rel="noopener noreferrer">
+          WhatsApp
+        </a>
+
+        <a
+          class="btn btn-facebook"
+          href="https://www.facebook.com/guy.lionnel.funguro"
+          target="_blank"
+          rel="noopener noreferrer">
+          Facebook
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a
+  class="whatsapp-float"
+  href="https://wa.me/25776230236?text=Bonjour%20ITEKANE%2C%20je%20souhaite%20vous%20contacter."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Contacter ITEKANE sur WhatsApp">
+  WhatsApp
+</a>
+
+<footer>
+  <div class="container footer-wrap">
+    <div>
+      <strong>ITEKANE</strong>
+      <span>Amagara yo mu mutwe • Kubaho neza</span>
+    </div>
+    <span>© 2026 ITEKANE</span>
+  </div>
+</footer>
+
+<script>
+  const langToggle = document.getElementById('langToggle');
+  let lang = 'fr';
+
+  langToggle.addEventListener('click', () => {
+    lang = lang === 'fr' ? 'rn' : 'fr';
+    document.documentElement.lang = lang === 'fr' ? 'fr' : 'rn';
+
+    document.querySelectorAll('[data-fr][data-rn]').forEach(el => {
+      el.textContent = el.dataset[lang];
+    });
+
+    langToggle.textContent = lang === 'fr' ? 'RN' : 'FR';
+  });
+</script>
+
 </body>
 </html>
