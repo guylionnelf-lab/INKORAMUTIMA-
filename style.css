@@ -60,3 +60,20 @@ footer{border-top:1px solid var(--line)}.footer-wrap{min-height:92px;display:fle
     width: 100%;
   }
 }
+
+
+/* AMÉLIORATION VISIBILITÉ DU SOUS-TITRE PRINCIPAL */
+.eyebrow {
+  color: #C9DECf !important;
+  font-weight: 900 !important;
+  letter-spacing: 1.6px !important;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 760px) {
+  .eyebrow {
+    color: #D4E6D8 !important;
+    font-size: 0.74rem !important;
+    letter-spacing: 1.35px !important;
+  }
+}
